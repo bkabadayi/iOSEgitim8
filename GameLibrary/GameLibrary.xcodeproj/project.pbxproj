@@ -3,33 +3,44 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7A512138259B0D5A004EFCE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A512137259B0D5A004EFCE7 /* AppDelegate.swift */; };
 		7A51213A259B0D5B004EFCE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A512139259B0D5B004EFCE7 /* SceneDelegate.swift */; };
-		7A51213C259B0D5B004EFCE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A51213B259B0D5B004EFCE7 /* ViewController.swift */; };
+		7A51213C259B0D5B004EFCE7 /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A51213B259B0D5B004EFCE7 /* GamesVC.swift */; };
 		7A51213F259B0D5B004EFCE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A51213D259B0D5B004EFCE7 /* Main.storyboard */; };
 		7A512141259B0D5B004EFCE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A512140259B0D5B004EFCE7 /* Assets.xcassets */; };
 		7A512144259B0D5B004EFCE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A512142259B0D5B004EFCE7 /* LaunchScreen.storyboard */; };
-		7A512154259B1497004EFCE7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A512153259B1497004EFCE7 /* Item.swift */; };
+		7A512154259B1497004EFCE7 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A512153259B1497004EFCE7 /* CartItem.swift */; };
 		7A51215E259B40C2004EFCE7 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A51215C259B40C2004EFCE7 /* ImageCollectionViewCell.swift */; };
 		7A51215F259B40C2004EFCE7 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A51215D259B40C2004EFCE7 /* ImageCollectionViewCell.xib */; };
+		7A512169259B499F004EFCE7 /* GameDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A512168259B499F004EFCE7 /* GameDetailsVC.swift */; };
+		7A51216C259B4D3C004EFCE7 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A51216B259B4D3C004EFCE7 /* CartVC.swift */; };
+		7A512173259BABC3004EFCE7 /* GameInfosInCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A512172259BABC3004EFCE7 /* GameInfosInCart.swift */; };
+		7A512177259BB1C5004EFCE7 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A512175259BB1C5004EFCE7 /* CartTableViewCell.swift */; };
+		7A512178259BB1C5004EFCE7 /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A512176259BB1C5004EFCE7 /* CartTableViewCell.xib */; };
+		7A512180259C6E38004EFCE7 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 7A51217F259C6E38004EFCE7 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A512134259B0D5A004EFCE7 /* GameLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A512137259B0D5A004EFCE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A512139259B0D5B004EFCE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7A51213B259B0D5B004EFCE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7A51213B259B0D5B004EFCE7 /* GamesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
 		7A51213E259B0D5B004EFCE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A512140259B0D5B004EFCE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A512143259B0D5B004EFCE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A512145259B0D5B004EFCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A512153259B1497004EFCE7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7A512153259B1497004EFCE7 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		7A51215C259B40C2004EFCE7 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		7A51215D259B40C2004EFCE7 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		7A512168259B499F004EFCE7 /* GameDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsVC.swift; sourceTree = "<group>"; };
+		7A51216B259B4D3C004EFCE7 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		7A512172259BABC3004EFCE7 /* GameInfosInCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfosInCart.swift; sourceTree = "<group>"; };
+		7A512175259BB1C5004EFCE7 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		7A512176259BB1C5004EFCE7 /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A512180259C6E38004EFCE7 /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +74,7 @@
 		7A512136259B0D5A004EFCE7 /* GameLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				7A51217B259BCED6004EFCE7 /* Helpers */,
 				7A512156259B1AC5004EFCE7 /* Controllers */,
 				7A512152259B1488004EFCE7 /* Models */,
 				7A51214E259B1147004EFCE7 /* Cells */,
@@ -80,6 +93,8 @@
 			children = (
 				7A51215C259B40C2004EFCE7 /* ImageCollectionViewCell.swift */,
 				7A51215D259B40C2004EFCE7 /* ImageCollectionViewCell.xib */,
+				7A512175259BB1C5004EFCE7 /* CartTableViewCell.swift */,
+				7A512176259BB1C5004EFCE7 /* CartTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -87,7 +102,7 @@
 		7A512152259B1488004EFCE7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7A512153259B1497004EFCE7 /* Item.swift */,
+				7A512153259B1497004EFCE7 /* CartItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -95,9 +110,19 @@
 		7A512156259B1AC5004EFCE7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7A51213B259B0D5B004EFCE7 /* ViewController.swift */,
+				7A51213B259B0D5B004EFCE7 /* GamesVC.swift */,
+				7A512168259B499F004EFCE7 /* GameDetailsVC.swift */,
+				7A51216B259B4D3C004EFCE7 /* CartVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A51217B259BCED6004EFCE7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7A512172259BABC3004EFCE7 /* GameInfosInCart.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +141,9 @@
 			dependencies = (
 			);
 			name = GameLibrary;
+			packageProductDependencies = (
+				7A51217F259C6E38004EFCE7 /* Toast */,
+			);
 			productName = GameLibrary;
 			productReference = 7A512134259B0D5A004EFCE7 /* GameLibrary.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 7A51212B259B0D5A004EFCE7;
+			packageReferences = (
+				7A51217E259C6E38004EFCE7 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 7A512135259B0D5A004EFCE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A512178259BB1C5004EFCE7 /* CartTableViewCell.xib in Resources */,
 				7A512144259B0D5B004EFCE7 /* LaunchScreen.storyboard in Resources */,
 				7A512141259B0D5B004EFCE7 /* Assets.xcassets in Resources */,
 				7A51215F259B40C2004EFCE7 /* ImageCollectionViewCell.xib in Resources */,
@@ -172,10 +204,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A51215E259B40C2004EFCE7 /* ImageCollectionViewCell.swift in Sources */,
-				7A512154259B1497004EFCE7 /* Item.swift in Sources */,
-				7A51213C259B0D5B004EFCE7 /* ViewController.swift in Sources */,
+				7A512154259B1497004EFCE7 /* CartItem.swift in Sources */,
+				7A512173259BABC3004EFCE7 /* GameInfosInCart.swift in Sources */,
+				7A512177259BB1C5004EFCE7 /* CartTableViewCell.swift in Sources */,
+				7A51216C259B4D3C004EFCE7 /* CartVC.swift in Sources */,
+				7A51213C259B0D5B004EFCE7 /* GamesVC.swift in Sources */,
 				7A512138259B0D5A004EFCE7 /* AppDelegate.swift in Sources */,
 				7A51213A259B0D5B004EFCE7 /* SceneDelegate.swift in Sources */,
+				7A512169259B499F004EFCE7 /* GameDetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A51217E259C6E38004EFCE7 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A51217F259C6E38004EFCE7 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A51217E259C6E38004EFCE7 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A51212C259B0D5A004EFCE7 /* Project object */;
 }

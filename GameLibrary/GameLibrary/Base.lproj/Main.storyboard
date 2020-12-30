@@ -9,17 +9,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--GamesVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GameLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GamesVC" customModule="GameLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Rave GameStore!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnY-A3-pvY">
+                                <rect key="frame" x="10" y="88" width="394" height="133"/>
+                                <color key="backgroundColor" red="0.26185107229999999" green="0.32588672639999999" blue="0.99219924209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="URR-WQ-y7F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="21"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Sy-Sv-PHS">
-                                <rect key="frame" x="10" y="108" width="394" height="734"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="10" y="241" width="394" height="509"/>
+                                <color key="backgroundColor" red="0.49610650540000001" green="0.50069767239999996" blue="0.85738903280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="509" id="sYS-Rg-1YP"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CEe-UA-muh">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -38,24 +50,233 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVs-Xu-D0Y">
+                                <rect key="frame" x="15" y="767" width="384" height="80"/>
+                                <color key="backgroundColor" red="0.93107777830000005" green="0.70223122839999996" blue="0.15625944729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Fir-W1-oIA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="21"/>
+                                <state key="normal" title="GO TO CART">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToCartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJO-O8-PnN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.49610650540000001" green="0.50069767239999996" blue="0.85738903280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="tnY-A3-pvY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="G5Q-82-0Do"/>
+                            <constraint firstItem="0Sy-Sv-PHS" firstAttribute="top" secondItem="tnY-A3-pvY" secondAttribute="bottom" constant="20" id="HEb-kC-Ua1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sVs-Xu-D0Y" secondAttribute="bottom" constant="15" id="MC9-BY-dXV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Sy-Sv-PHS" secondAttribute="trailing" constant="10" id="Pxy-zg-RdQ"/>
-                            <constraint firstItem="0Sy-Sv-PHS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QHK-eP-9FC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Sy-Sv-PHS" secondAttribute="bottom" constant="20" id="TSB-f3-olb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tnY-A3-pvY" secondAttribute="trailing" constant="10" id="U3I-58-dqX"/>
+                            <constraint firstItem="sVs-Xu-D0Y" firstAttribute="top" secondItem="0Sy-Sv-PHS" secondAttribute="bottom" constant="17" id="VkE-lI-znW"/>
                             <constraint firstItem="0Sy-Sv-PHS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Z89-eW-OpE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sVs-Xu-D0Y" secondAttribute="trailing" constant="15" id="e80-16-kdH"/>
+                            <constraint firstItem="sVs-Xu-D0Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="r6W-c5-IxU"/>
+                            <constraint firstItem="tnY-A3-pvY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u2T-Ry-rfz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZAf-cA-FrV"/>
                     <connections>
+                        <outlet property="appInfoLabel" destination="tnY-A3-pvY" id="bvY-K5-SWo"/>
                         <outlet property="collectionView" destination="0Sy-Sv-PHS" id="H8O-LE-yFy"/>
+                        <outlet property="goToCartButton" destination="sVs-Xu-D0Y" id="teZ-kz-Otz"/>
+                        <segue destination="sRL-rj-cww" kind="show" id="sIo-jg-BQa"/>
+                        <segue destination="bJw-Qg-u8O" kind="show" id="QxL-6p-aWH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="973.91304347826099" y="118.52678571428571"/>
+        </scene>
+        <!--CartVC-->
+        <scene sceneID="vgu-2r-uAh">
+            <objects>
+                <viewController storyboardIdentifier="CartVC" id="bJw-Qg-u8O" userLabel="CartVC" customClass="CartVC" customModule="GameLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wte-nJ-6AW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gIi-fN-TcQ">
+                                <rect key="frame" x="15" y="209" width="384" height="413"/>
+                                <color key="backgroundColor" red="0.49610650540000001" green="0.50069767239999996" blue="0.85738903280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Cart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuC-LC-aoM">
+                                <rect key="frame" x="15" y="103" width="384" height="85"/>
+                                <color key="backgroundColor" red="0.2541196644" green="0.29333367939999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="w2A-7r-cpg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzx-Dc-C4e">
+                                <rect key="frame" x="15" y="771" width="384" height="76"/>
+                                <color key="backgroundColor" red="0.93503892420000001" green="0.7064604163" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="9pm-MT-LNe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="21"/>
+                                <state key="normal" title="CONFIRM CART">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="cartButtonPressed:" destination="bJw-Qg-u8O" eventType="touchUpInside" id="Maj-Kp-UBe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL PRICE " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHh-SI-edM">
+                                <rect key="frame" x="15" y="666" width="384" height="80"/>
+                                <color key="backgroundColor" red="0.2541196644" green="0.29333367939999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="QMu-iC-LHb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bQg-Nw-xcv"/>
+                        <color key="backgroundColor" red="0.49610650540000001" green="0.50069767239999996" blue="0.85738903280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gHh-SI-edM" firstAttribute="top" secondItem="gIi-fN-TcQ" secondAttribute="bottom" constant="44" id="6Mq-hd-ShE"/>
+                            <constraint firstItem="TuC-LC-aoM" firstAttribute="top" secondItem="bQg-Nw-xcv" secondAttribute="top" constant="15" id="Axf-P4-taP"/>
+                            <constraint firstItem="bQg-Nw-xcv" firstAttribute="trailing" secondItem="mzx-Dc-C4e" secondAttribute="trailing" constant="15" id="FZz-5q-u2y"/>
+                            <constraint firstItem="bQg-Nw-xcv" firstAttribute="trailing" secondItem="gIi-fN-TcQ" secondAttribute="trailing" constant="15" id="Iyz-ak-8AB"/>
+                            <constraint firstItem="TuC-LC-aoM" firstAttribute="leading" secondItem="bQg-Nw-xcv" secondAttribute="leading" constant="15" id="Jr6-hZ-h6t"/>
+                            <constraint firstItem="mzx-Dc-C4e" firstAttribute="top" secondItem="gHh-SI-edM" secondAttribute="bottom" constant="25" id="UdO-ab-pnJ"/>
+                            <constraint firstItem="bQg-Nw-xcv" firstAttribute="bottom" secondItem="mzx-Dc-C4e" secondAttribute="bottom" constant="15" id="bl4-nQ-0jW"/>
+                            <constraint firstItem="mzx-Dc-C4e" firstAttribute="leading" secondItem="bQg-Nw-xcv" secondAttribute="leading" constant="15" id="bzb-yq-5MZ"/>
+                            <constraint firstItem="bQg-Nw-xcv" firstAttribute="trailing" secondItem="gHh-SI-edM" secondAttribute="trailing" constant="15" id="eAz-fp-SzH"/>
+                            <constraint firstItem="gHh-SI-edM" firstAttribute="leading" secondItem="bQg-Nw-xcv" secondAttribute="leading" constant="15" id="frG-q8-aKJ"/>
+                            <constraint firstItem="gIi-fN-TcQ" firstAttribute="leading" secondItem="bQg-Nw-xcv" secondAttribute="leading" constant="15" id="hkp-Bb-VfQ"/>
+                            <constraint firstItem="bQg-Nw-xcv" firstAttribute="trailing" secondItem="TuC-LC-aoM" secondAttribute="trailing" constant="15" id="oyH-eR-Uv2"/>
+                            <constraint firstItem="gIi-fN-TcQ" firstAttribute="top" secondItem="TuC-LC-aoM" secondAttribute="bottom" constant="21" id="z6m-8q-gF3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Du-h8-mY5"/>
+                    <connections>
+                        <outlet property="cartButton" destination="mzx-Dc-C4e" id="RdC-uC-Yb9"/>
+                        <outlet property="cartInfoLabel" destination="TuC-LC-aoM" id="Grm-QK-CNY"/>
+                        <outlet property="tableView" destination="gIi-fN-TcQ" id="841-4d-ghN"/>
+                        <outlet property="totalPriceLabel" destination="gHh-SI-edM" id="aNc-Ms-AUW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBa-MH-iwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021.7391304347827" y="675"/>
+        </scene>
+        <!--GameDetailsVC-->
+        <scene sceneID="dDn-pU-EdP">
+            <objects>
+                <viewController storyboardIdentifier="GameDetailsVC" id="sRL-rj-cww" userLabel="GameDetailsVC" customClass="GameDetailsVC" customModule="GameLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kgq-7a-gYO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wYX-wo-Nr5">
+                                <rect key="frame" x="15" y="238" width="384" height="334.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPk-kQ-44A">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="59"/>
+                                        <color key="backgroundColor" red="0.23248257345603274" green="0.32815007880529334" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6M-dl-FcW">
+                                        <rect key="frame" x="0.0" y="69" width="384" height="59"/>
+                                        <color key="backgroundColor" red="0.23248257350000001" green="0.32815007880000002" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eik-EQ-gnf">
+                                        <rect key="frame" x="0.0" y="138" width="384" height="58.5"/>
+                                        <color key="backgroundColor" red="0.23248257350000001" green="0.32815007880000002" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BS-Lg-ZoI">
+                                        <rect key="frame" x="0.0" y="206.5" width="384" height="59"/>
+                                        <color key="backgroundColor" red="0.23248257350000001" green="0.32815007880000002" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ur6-VF-hCk">
+                                        <rect key="frame" x="0.0" y="275.5" width="384" height="59"/>
+                                        <color key="backgroundColor" red="0.23248257350000001" green="0.32815007880000002" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ur6-VF-hCk" firstAttribute="width" secondItem="gPk-kQ-44A" secondAttribute="width" id="87g-SW-5B6"/>
+                                    <constraint firstItem="Ur6-VF-hCk" firstAttribute="height" secondItem="gPk-kQ-44A" secondAttribute="height" id="Cex-gU-ZK3"/>
+                                    <constraint firstItem="Ur6-VF-hCk" firstAttribute="width" secondItem="s6M-dl-FcW" secondAttribute="width" id="LlP-S9-Yzf"/>
+                                    <constraint firstItem="Ur6-VF-hCk" firstAttribute="height" secondItem="Eik-EQ-gnf" secondAttribute="height" id="NOM-zM-21e"/>
+                                    <constraint firstItem="Ur6-VF-hCk" firstAttribute="width" secondItem="3BS-Lg-ZoI" secondAttribute="width" id="OTa-XS-o8x"/>
+                                    <constraint firstItem="Ur6-VF-hCk" firstAttribute="height" secondItem="3BS-Lg-ZoI" secondAttribute="height" id="Pwq-W5-eKK"/>
+                                    <constraint firstItem="Ur6-VF-hCk" firstAttribute="height" secondItem="s6M-dl-FcW" secondAttribute="height" id="RII-Bm-B1D"/>
+                                    <constraint firstItem="Ur6-VF-hCk" firstAttribute="width" secondItem="Eik-EQ-gnf" secondAttribute="width" id="eox-c8-FCH"/>
+                                    <constraint firstItem="Ur6-VF-hCk" firstAttribute="width" secondItem="wYX-wo-Nr5" secondAttribute="width" id="iJ8-xx-cW5"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QVF-N9-4h7">
+                                <rect key="frame" x="95" y="98" width="224" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="0Ht-QL-UJw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8L-c3-iU5">
+                                <rect key="frame" x="15" y="767" width="384" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.73135696101400893" blue="0.11853313611100369" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="bnR-58-ly3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="21"/>
+                                <state key="normal" title="ADD TO CART">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToCartButtonPressed:" destination="sRL-rj-cww" eventType="touchUpInside" id="Nno-vl-2KD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mZQ-5D-lWo"/>
+                        <color key="backgroundColor" red="0.58743657392526316" green="0.60249494610266274" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mZQ-5D-lWo" firstAttribute="bottom" secondItem="z8L-c3-iU5" secondAttribute="bottom" constant="15" id="4oZ-OF-elc"/>
+                            <constraint firstItem="mZQ-5D-lWo" firstAttribute="trailing" secondItem="QVF-N9-4h7" secondAttribute="trailing" constant="95" id="Ny8-D9-74C"/>
+                            <constraint firstItem="wYX-wo-Nr5" firstAttribute="top" secondItem="QVF-N9-4h7" secondAttribute="bottom" constant="25" id="Sfc-lG-wkh"/>
+                            <constraint firstItem="mZQ-5D-lWo" firstAttribute="trailing" secondItem="z8L-c3-iU5" secondAttribute="trailing" constant="15" id="YlJ-ec-OU3"/>
+                            <constraint firstItem="z8L-c3-iU5" firstAttribute="top" secondItem="wYX-wo-Nr5" secondAttribute="bottom" constant="194.5" id="YyX-pa-0rW"/>
+                            <constraint firstItem="mZQ-5D-lWo" firstAttribute="trailing" secondItem="wYX-wo-Nr5" secondAttribute="trailing" constant="15" id="Z0D-YI-QFN"/>
+                            <constraint firstItem="QVF-N9-4h7" firstAttribute="leading" secondItem="mZQ-5D-lWo" secondAttribute="leading" constant="95" id="be0-lq-V5D"/>
+                            <constraint firstItem="wYX-wo-Nr5" firstAttribute="leading" secondItem="mZQ-5D-lWo" secondAttribute="leading" constant="15" id="qxg-tB-HP5"/>
+                            <constraint firstItem="z8L-c3-iU5" firstAttribute="leading" secondItem="mZQ-5D-lWo" secondAttribute="leading" constant="15" id="sTl-k7-Nv4"/>
+                            <constraint firstItem="QVF-N9-4h7" firstAttribute="top" secondItem="mZQ-5D-lWo" secondAttribute="top" constant="10" id="tgN-ky-KgF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lcn-jo-cip"/>
+                    <connections>
+                        <outlet property="addToCartButton" destination="z8L-c3-iU5" id="Grv-RM-q0k"/>
+                        <outlet property="detailCategoryLabel" destination="3BS-Lg-ZoI" id="SGB-1f-5nY"/>
+                        <outlet property="detailImageView" destination="QVF-N9-4h7" id="ahV-Rn-hBH"/>
+                        <outlet property="detailMultiplayerLabel" destination="Ur6-VF-hCk" id="Jo7-2M-9ym"/>
+                        <outlet property="detailNameLabel" destination="gPk-kQ-44A" id="kqv-M8-7Bq"/>
+                        <outlet property="detailPublisherLabel" destination="s6M-dl-FcW" id="DwT-zp-E71"/>
+                        <outlet property="detailSizeLabel" destination="Eik-EQ-gnf" id="ieB-7n-LuM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2w-wC-PqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021.7391304347827" y="-265.17857142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gBn-Di-Lzn">
@@ -77,8 +298,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
