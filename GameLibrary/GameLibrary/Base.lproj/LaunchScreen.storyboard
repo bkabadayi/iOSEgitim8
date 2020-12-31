@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,40 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreenicon" translatesAutoresizingMaskIntoConstraints="NO" id="8xw-hs-8jQ">
+                                <rect key="frame" x="87" y="278" width="240" height="247"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="developed by Raveloren" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSd-DS-vnS">
+                                <rect key="frame" x="40" y="615" width="334" height="97"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.23868656186306231" blue="0.80619841810000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.11948085579999999" green="0.80619841810000004" blue="0.42862325909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8xw-hs-8jQ" secondAttribute="trailing" constant="87" id="9Wg-MZ-mJI"/>
+                            <constraint firstItem="8xw-hs-8jQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="234" id="MWx-cS-tFg"/>
+                            <constraint firstItem="ZSd-DS-vnS" firstAttribute="top" secondItem="8xw-hs-8jQ" secondAttribute="bottom" constant="90" id="O8o-pa-f1a"/>
+                            <constraint firstItem="ZSd-DS-vnS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="d3g-0B-LKH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8xw-hs-8jQ" secondAttribute="bottom" constant="337" id="dT0-Js-jhy"/>
+                            <constraint firstItem="8xw-hs-8jQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="gSR-yD-U9U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZSd-DS-vnS" secondAttribute="bottom" constant="150" id="rM1-5G-nSj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZSd-DS-vnS" secondAttribute="trailing" constant="40" id="z9z-v2-I78"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launchscreenicon" width="800" height="600"/>
+    </resources>
 </document>

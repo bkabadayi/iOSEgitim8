@@ -18,7 +18,7 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCJ-jd-yHB">
                         <rect key="frame" x="5" y="5" width="310" height="34"/>
-                        <color key="backgroundColor" red="0.12959108189999999" green="0.4086285335" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="310" id="Wbu-ro-2pR"/>
                             <constraint firstAttribute="height" constant="34" id="Xoh-E7-XcO"/>

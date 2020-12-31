@@ -91,10 +91,8 @@
 		7A51214E259B1147004EFCE7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7A51215C259B40C2004EFCE7 /* ImageCollectionViewCell.swift */,
-				7A51215D259B40C2004EFCE7 /* ImageCollectionViewCell.xib */,
-				7A512175259BB1C5004EFCE7 /* CartTableViewCell.swift */,
-				7A512176259BB1C5004EFCE7 /* CartTableViewCell.xib */,
+				7A512182259CA61D004EFCE7 /* CollectionViewCells */,
+				7A512184259CA641004EFCE7 /* TableViewCells */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -123,6 +121,24 @@
 				7A512172259BABC3004EFCE7 /* GameInfosInCart.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7A512182259CA61D004EFCE7 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				7A51215C259B40C2004EFCE7 /* ImageCollectionViewCell.swift */,
+				7A51215D259B40C2004EFCE7 /* ImageCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		7A512184259CA641004EFCE7 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				7A512175259BB1C5004EFCE7 /* CartTableViewCell.swift */,
+				7A512176259BB1C5004EFCE7 /* CartTableViewCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
